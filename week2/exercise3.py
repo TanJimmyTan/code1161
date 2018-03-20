@@ -87,9 +87,10 @@ def loops_2():
 
     e_list = []
     for y in range(10):
+        hitch = []
         for w in range(10):
-            e_list.append('*')
-        e_list.append("\n")    
+            hitch.append('*')
+        e_list.append(hitch)    
     return e_list
 
 
@@ -116,9 +117,10 @@ def loops_3():
     """
     g_list = []
     for j in range(10):
+        j_list = []
         for t in range(10):
-            g_list.append(str(j))
-        g_list.append("\n")
+            j_list.append(str(j))
+        g_list.append(j_list)
     return g_list
 
 
@@ -141,9 +143,10 @@ def loops_4():
     """
     k_list = []
     for h in range(10):
+        kid = []
         for c in range(10):
-            k_list.append(str(c))
-        k_list.append("\n")
+            kid.append(str(c))
+        k_list.append(kid)
     return k_list
 
 
@@ -171,9 +174,10 @@ def loops_5():
     """
     poop = []
     for oppo in range(10):
+        peep = []
         for skedaddle in range(5):
-            poop.append('i' + str(oppo) + 'j' + str(skedaddle) + ' ')
-        poop.append("\n")
+            peep.append('i' + str(oppo) + 'j' + str(skedaddle) + ' ')
+        poop.append(peep)
     return poop
 
 
@@ -199,9 +203,10 @@ def loops_6():
     """
     leap = []
     for hag in range(10):
-        for bag in range():
+        leap2 = []
+        for bag in range(hag + 1):
             leap.append(bag)
-        leap.append("\n")
+        leap.append('\n')
     return leap
 
 
@@ -226,7 +231,16 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    pass
+    meap = []
+    for dag in range(5):
+        meap2 = []
+        for lag in range(dag + 1):
+            if abs(lag - 4) <= dag:
+                meap2.append('*')
+            else:
+                meap2.append(' ')
+        meap.append(meap2)
+    return meap
 
 
 def lp(some_kind_of_list, exercise_name):
