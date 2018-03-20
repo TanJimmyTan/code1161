@@ -12,7 +12,10 @@ def loop_ranger(start, stop=None, step=1):
 
     Do this using any method apart from just using range()
     """
-    pass
+    jig = list
+    for fig in range (step=, stop=)
+        jig.append(10)
+    return jig
 
 
 def lone_ranger(start, stop, step):

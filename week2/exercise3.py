@@ -7,8 +7,11 @@ def is_odd(a_number):
 
     Look into modulo division using the '%' operator as one way of doing this.
     """
-    pass
 
+    if a_number % 2 == 0:
+        return False
+    else:
+        return True
 
 def fix_it(moves=True, should_move=True):
     """Decide what to do.
@@ -21,7 +24,17 @@ def fix_it(moves=True, should_move=True):
     "Duct Tape"
     "No Problem"
     """
-    pass
+    if moves:
+        if should_move:
+            return "No Problem"
+        else:
+            return "Duct Tape"
+    else:
+        if should_move:
+            return "WD-40"
+        else:
+            return "No Problem"
+        
 
 
 def loops_1a():
@@ -31,7 +44,11 @@ def loops_1a():
     return a list of 10 items, each one a string with exacly one star in it.
     E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
     """
-    pass
+    a_list = []
+    for a in range(10):
+        a_list.append('*')
+    return a_list      
+
 
 
 
@@ -43,7 +60,10 @@ def loops_1c(number_of_items=5, symbol="#"):
     a string with exacly one symbol in it.
     E.g.: ['#', '#', '#', '#', '#']
     """
-    pass
+    t_list = []
+    for number in range(number_of_items):
+        t_list.append(symbol)
+    return t_list
 
 
 def loops_2():
@@ -64,7 +84,13 @@ def loops_2():
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
           ]
     """
-    pass
+
+    e_list = []
+    for y in range(10):
+        for w in range(10):
+            e_list.append('*')
+        e_list.append("\n")    
+    return e_list
 
 
 def loops_3():
@@ -88,7 +114,12 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    pass
+    g_list = []
+    for j in range(10):
+        for t in range(10):
+            g_list.append(str(j))
+        g_list.append("\n")
+    return g_list
 
 
 def loops_4():
@@ -108,7 +139,12 @@ def loops_4():
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     ]
     """
-    pass
+    k_list = []
+    for h in range(10):
+        for c in range(10):
+            k_list.append(str(c))
+        k_list.append("\n")
+    return k_list
 
 
 def loops_5():
@@ -133,7 +169,12 @@ def loops_5():
         "There are {} green bottles".format(8)
     you'll come to see the pros and cons of each over time.
     """
-    pass
+    poop = []
+    for oppo in range(10):
+        for skedaddle in range(5):
+            poop.append('i' + str(oppo) + 'j' + str(skedaddle) + ' ')
+        poop.append("\n")
+    return poop
 
 
 def loops_6():
@@ -156,7 +197,12 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    pass
+    leap = []
+    for hag in range(10):
+        for bag in range():
+            leap.append(bag)
+        leap.append("\n")
+    return leap
 
 
 def loops_7():

@@ -11,6 +11,7 @@ import platform
 # I think this will print "hello! Let's get started" by calling the print function.
 print("hello! Let's get started")  # it printed "hello! Let's get started"
 
+# I think this will print ['what', 'does', 'this', 'line', 'do', '?']
 some_words = ['what', 'does', 'this', 'line', 'do', '?']
 
 for word in some_words:
@@ -23,7 +24,7 @@ print(some_words)
 
 if len(some_words) > 3:
     print('some_words contains more than 3 words')
-
+#It ended up printing each word in its own line twice. Then it printed its contents. Afterwards it printed some_words contain smore thna 3 words
 def usefulFunction():
     """
     You may want to look up what uname does before you guess
