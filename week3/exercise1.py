@@ -12,10 +12,13 @@ def loop_ranger(start, stop=None, step=1):
 
     Do this using any method apart from just using range()
     """
-    jig = list
-    for fig in range (step=, stop=)
-        jig.append(10)
-    return jig
+    flap = []
+    counter = start
+    while counter < stop:
+        flap.append(counter)
+        counter += 1
+    return flap
+
 
 
 def lone_ranger(start, stop, step):
@@ -23,7 +26,12 @@ def lone_ranger(start, stop, step):
 
     Look up the docs for range() and wrap it in a 1:1 way
     """
-    pass
+    nap = []
+    counter = start
+    while counter < stop:
+        nap.append(counter)
+        counter += 2
+    return nap
 
 
 def two_step_ranger(start, stop):
@@ -32,7 +40,7 @@ def two_step_ranger(start, stop):
     Sometimes you want to hide complexity.
     Make a range function that always has a step size of 2
     """
-    pass
+    
 
 
 def gene_krupa_range(start, stop, even_step, odd_step):
