@@ -33,7 +33,7 @@ def test_stubborn_asker(path, low, high):
 
     mockInputs = list(range(low - 25, high + 20, 5))
     try:
-        # with Timeout(3):
+        with Timeout(3):
             with mock.patch('builtins.input', side_effect=mockInputs):
                 return low <= exercise1.stubborn_asker(low, high) <= high
     except Exception as e:

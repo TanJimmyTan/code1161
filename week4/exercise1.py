@@ -28,7 +28,11 @@ def success_is_relative():
     # this depends on excecution context. Take a look at your CWD and remember
     # that it changes.
     # print(path, CWD)
-    pass
+    
+    file = open('pySuccessMessage.json', 'r')
+    print(file.read(1))
+    print(file.read())
+    
 
 
 def get_some_details():

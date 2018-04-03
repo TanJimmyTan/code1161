@@ -14,7 +14,7 @@ def loop_ranger(start, stop=None, step=1):
     """
     flap = []
     counter = start
-    while counter < stop:
+    while counter <= stop:
         flap.append(counter)
         counter += 1
     return flap
@@ -26,12 +26,9 @@ def lone_ranger(start, stop, step):
 
     Look up the docs for range() and wrap it in a 1:1 way
     """
-    nap = []
-    counter = start
-    while counter < stop:
-        nap.append(counter)
-        counter += 2
-    return nap
+    a = range(start,stop,step)
+    b = list(a)
+    return b 
 
 
 def two_step_ranger(start, stop):
@@ -40,7 +37,12 @@ def two_step_ranger(start, stop):
     Sometimes you want to hide complexity.
     Make a range function that always has a step size of 2
     """
-    
+    nap = []
+    counter = start
+    while counter <= stop: 
+        nap.append(counter)
+        counter += 2
+    return nap
 
 
 def gene_krupa_range(start, stop, even_step, odd_step):
@@ -49,7 +51,18 @@ def gene_krupa_range(start, stop, even_step, odd_step):
     make a list that instead of having evenly spaced steps
     has odd steps be one size and even steps be another.
     """
-    pass
+    gene = []
+    robot = start
+    counter = 0
+    
+    while robot <= stop:
+        gene.append(robot)
+        if counter % 2 == 0:
+            robot += even_step
+        else:
+            robot += odd_step
+        counter += 1
+    return gene
 
 
 def stubborn_asker(low, high):
@@ -58,7 +71,19 @@ def stubborn_asker(low, high):
     Ask for a number, and if the response is outside the bounds keep asking
     until you get a number that you think is OK
     """
-    pass
+    high = 10
+    low = 1
+    number = input
+    if number < low:
+        print("Too low, try again")
+    else:
+        print("Cool bro")
+    if number > high:
+        print("Too low, try again")
+    else:
+        print("Cool bro")
+
+    
 
 
 def not_number_rejector(message):
