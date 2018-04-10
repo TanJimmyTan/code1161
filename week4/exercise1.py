@@ -28,11 +28,12 @@ def success_is_relative():
     # this depends on excecution context. Take a look at your CWD and remember
     # that it changes.
     # print(path, CWD)
-    
-    file = open('pySuccessMessage.json', 'r')
-    print(file.read(1))
-    print(file.read())
-    
+
+
+    myfile = open('/Users/jtan/Documents/GitHub/code1161/week1/pySuccessMessage.json')
+    mytxt = myfile.read()
+    myfile.close()
+
 
 
 def get_some_details():
@@ -58,6 +59,9 @@ def get_some_details():
             "password":       None,
             "postcodePlusID": None
             }
+    
+    mytile = open('/Users/jtan/Documents/GitHub/code1161/week4/lazyduck.json')
+
 
 
 def wordy_pyramid():
@@ -92,7 +96,7 @@ def wordy_pyramid():
     ]
     TIP: to add an argument to a URL, use: ?argName=argVal e.g. ?len=
     """
-    pass
+    Gip = []
 
 
 def wunderground():

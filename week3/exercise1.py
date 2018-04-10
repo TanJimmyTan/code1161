@@ -74,14 +74,14 @@ def stubborn_asker(low, high):
     high = 10
     low = 1
     number = input
+    type(number)
     if number < low:
         print("Too low, try again")
-    else:
-        print("Cool bro")
-    if number > high:
+    elif number > high:
         print("Too low, try again")
     else:
         print("Cool bro")
+    
 
     
 
