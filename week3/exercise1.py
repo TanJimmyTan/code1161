@@ -16,7 +16,7 @@ def loop_ranger(start, stop=None, step=1):
     counter = start
     while counter <= stop:
         flap.append(counter)
-        counter += 1
+        counter += step
     return flap
 
 
