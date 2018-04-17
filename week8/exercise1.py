@@ -17,7 +17,7 @@ def greet(name="Towering Timmy"):
     return a string of "Hello" and the name argument.
     E.g. if given as "Towering Timmy" it should return "Hello Towering Timmy"
     """
-    return name
+    return "Hello" + " " + name
 
 
 def three_counter(input_list=[1, 4, 3, 5, 7, 1, 3, 2, 3, 3, 5, 3, 7]):
@@ -43,19 +43,7 @@ def fizz_buzz():
     Return a list that has an integer if the number isn't special, and a string
     if it is. E.g. [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, ...]
     """
-    fizz_buzz = []
-    for f in range(1,101):
-        if f % 3 == 0:
-            return "Fizz"
-        elif f % 5 == 0:
-            return "Buzz"
-        elif f % 5 == 0 and f % 3 == 0:
-            return "FizzBuzz"
-        else:
-            return int(f)  
-        fizz_buzz.append(f)
-    return fizz_buzz
-
+    return ["Fizz"*(i%3==0)+"Buzz"*(i%5==0) or int(i) for i in range(1,101)]
 
 def put_behind_bars(input_string="very naughty boy"):
     """Interleave the input_string with pipes.
@@ -80,10 +68,8 @@ def pet_filter(letter="a"):
             "bali cattle", "gayal", "turkey", "goldfish", "rabbit", "koi",
             "canary", "society finch", "fancy mouse", "siamese fighting fish",
             "fancy rat and lab rat", "mink", "red fox", "hedgehog", "guppy"]
-    
-    for letter in pets:
-        if letter.find(letter) != -1:
-            return letter
+
+    return [i for i in pets if letter in i]
 
 
 def best_letter_for_pets():
@@ -94,7 +80,8 @@ def best_letter_for_pets():
     """
     import string
     the_alphabet = string.ascii_lowercase
-    pass
+  
+    
 
 
 def make_filler_text_dictionary():
@@ -126,7 +113,12 @@ def make_filler_text_dictionary():
     """
     
     import requests
-    return
+    hict = {}
+    url = "http://api.wordnik.com/v4/words.json/randomWords?api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5&minLength=3&maxLength=7&limit=3"
+    r = requests.get(url)
+    r.json()
+
+
 
 
 def random_filler_text(number_of_words=200):

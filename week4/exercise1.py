@@ -17,7 +17,6 @@ if LOCAL != CWD:
     print("CWD", CWD)
 
 
-<<<<<<< HEAD
 def success_is_relative():
     """Read from a file.
 
@@ -38,8 +37,6 @@ def success_is_relative():
     myfile.close()
 
 
-=======
->>>>>>> 4a03d19cf28f00cfe3515745bc2d56c82f194167
 
 def get_some_details():
     """Parse some JSON.

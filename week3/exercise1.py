@@ -45,7 +45,6 @@ def two_step_ranger(start, stop):
     return nap
 
 
-<<<<<<< HEAD
 def gene_krupa_range(start, stop, even_step, odd_step):
     """Make a range that has two step sizes.
 
@@ -66,8 +65,6 @@ def gene_krupa_range(start, stop, even_step, odd_step):
     return gene
 
 
-=======
->>>>>>> 4a03d19cf28f00cfe3515745bc2d56c82f194167
 def stubborn_asker(low, high):
     """Ask for a number between low and high until actually given one.
 
